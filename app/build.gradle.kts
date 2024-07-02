@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("maven-publish")
 }
 
 android {
@@ -70,17 +69,4 @@ dependencies {
 
     // NEW ADDED
 //    implementation(project(":CustomTextLibrary"))
-}
-
-// NEW ADDED
-afterEvaluate {
-    publishing {
-        publications {
-            register<MavenPublication>("release") {
-                groupId = "com.github.ungkritx"
-                artifactId = "custom-text-compose"
-                version = "1.1"
-            }
-        }
-    }
 }
