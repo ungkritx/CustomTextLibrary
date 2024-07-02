@@ -13,7 +13,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ungkritx.customtextlib.ui.theme.CustomTextLibTheme
-import com.ungkritx.customtextlibrary.CustomText
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +22,7 @@ class MainActivity : ComponentActivity() {
             CustomTextLibTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Box(Modifier.padding(innerPadding)) {
-                        CustomText("Hello Sun")
+//                        CustomText("Hello Sun")
                     }
                 }
             }
